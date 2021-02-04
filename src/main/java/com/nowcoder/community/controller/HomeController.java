@@ -33,6 +33,7 @@ public class HomeController {
         page.setPath("/index");
 
 
+
         List<DiscussPost> list = discussPostService.selectDiscussPost(0, page.getOffset(), page.getLimit());
         List<Map<String,Object>> discussPosts = new ArrayList<>();
         if (list != null) {
